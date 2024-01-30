@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ebeef0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*nav style*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-bottom: 5px thin black;
+    box-shadow: 0 0 20px 0 rgb(218, 182, 135);
+
+}
+
+.name {
+    font-size: 1.2rem;
+    padding-left: 20px;
+    color: rgb(5, 5, 5);
+    font-family: 'Yellowtail', cursive;
+
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.nav_link {
+    position: fixed;
+    width: 100%;
+    top: 4.5rem;
+    left: 0px;
+    background-color: rgb(212, 136, 22);
+}
+
+.nav_link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav_link a:hover {
+    background-color: aqua;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .nav_link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .name{
+        font-size: 1.7rem;
+        
+    }
+
+    .nav_link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/* body */
+.page {
+    display: block;
+    /* align-items: center; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 0.5rem;
+    height: 80%;
+
+    /* flex-wrap: wrap-reverse; */
+}
+
+.title{
+    display: flex;
+    font-size: 5vh;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.page-contant{
+    display: flex;
+    /* margin: 20px; */
+    border-bottom: 1px solid rgb(148, 144, 144);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading-box{
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.contant-box{
+    width: 90%;
+    font-size: 1.3rem;
+}
+
+.contant{
+    display: flex;
+    margin-bottom: 10px;
+}
+.year span{
+    display: flex;
+    margin: 6px 10px;
+    width: 100px;
+    font-size: medium;
+}
+
+.description{
+    list-style: none;
+    line-height: 25px;
+}
+
+.description h3 {
+    font-family: 'Lora', serif;
+}
+
+.description p {
+    font-family: 'Dosis',sans-serif;
+}
+
+
+/* Footer */
+
+.foot {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    flex-wrap: wrap;
+
+}
+
+.phone {
+    display: inline-block;
+
+}
+
+.mail {
+    display: inline-block;
+}
+
+.mail p a {
+    font-size: 1.1rem;
+    font-family: Verdana,
+        Geneva,
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.social-media {
+    display: inline-block;
+
+}
+
+.copyright {
+    display: inline-block;
+}
+
+/* social media icon */
+.fa {
+    padding: 10px 35px 10px 0;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 0px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    /* background: #3B5998; */
+    color: rgb(38, 76, 245);
+}
+
+.fa-twitter {
+    /* background: #55ACEE; */
+    color: rgb(129, 208, 245);
+}
+
+.fa-linkedin {
+    /* background: #007bb5; */
+    color: #007bb5;
+}
+
+.fa-instagram {
+    /* background: #125688; */
+    color: rgb(199, 80, 106);
+}
+
+@media only screen and (max-width: 600px) {
+    /* For footer: */
+    .phone{
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mail {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mail p a{
+        font-size: 1rem;
+        font-family: Verdana,
+            Geneva,
+            Arial,
+            Helvetica,
+            sans-serif;
+            
+    }
+    
+    .social-media {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .copyright {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+}

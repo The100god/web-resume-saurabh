@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ebeef0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*nav style*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-bottom: 5px thin black;
+    box-shadow: 0 0 20px 0 rgb(218, 182, 135);
+
+}
+
+.name {
+    font-size: 1.2rem;
+    padding-left: 20px;
+    color: rgb(5, 5, 5);
+    font-family: 'Yellowtail', cursive;
+
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.nav_link {
+    position: fixed;
+    width: 100%;
+    top: 4.5rem;
+    left: 0px;
+    background-color: rgb(212, 136, 22);
+}
+
+.nav_link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav_link a:hover {
+    background-color: aqua;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .nav_link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .name{
+        font-size: 1.7rem;
+        
+    }
+
+    .nav_link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+/* body */
+.page {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 20px;
+    padding-top: 4.5vw;
+    padding-bottom: 18.5vw;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+
+}
+
+.contact{
+    
+    display: block;
+    position: relative;
+    line-height: 40px;
+    padding: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+    max-width: 70%;
+    box-shadow: 0 0 71px 8px rgb(234 225 211);
+}
+
+.contact h1{
+    max-width:100%;
+    text-align: center;
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.contact p{
+    max-width:100%;
+    text-align: center;
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.form{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    padding: 0% 2%;
+}
+
+input{
+    padding: 0px 20px;
+}
+
+input[type=text], input[type=gmail], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+/* Footer */
+
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;   /*Height of the footer
+   background: #6cf; */
+   /* overflow-y:auto ; */
+}
+
+.foot {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    flex-wrap: wrap;
+    bottom: 0;
+}
+
+.phone {
+    display: inline-block;
+
+}
+
+.mail {
+    display: inline-block;
+}
+
+.mail p a {
+    font-size: 1.1rem;
+    font-family: Verdana,
+        Geneva,
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.social-media {
+    display: inline-block;
+
+}
+
+.copyright {
+    display: inline-block;
+}
+
+/* social media icon */
+.fa {
+    padding: 10px 35px 10px 0;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 0px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    /* background: #3B5998; */
+    color: rgb(38, 76, 245);
+}
+
+.fa-twitter {
+    /* background: #55ACEE; */
+    color: rgb(129, 208, 245);
+}
+
+.fa-linkedin {
+    /* background: #007bb5; */
+    color: #007bb5;
+}
+
+.fa-instagram {
+    /* background: #125688; */
+    color: rgb(199, 80, 106);
+}
+
+@media only screen and (max-width: 600px) {
+    /* For footer: */
+    .phone{
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mail {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mail p a{
+        font-size: 1rem;
+        font-family: Verdana,
+            Geneva,
+            Arial,
+            Helvetica,
+            sans-serif;
+            
+    }
+    
+    .social-media {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .copyright {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer{
+        position:static;
+        bottom: 0;
+        width: 100%;
+        height: 50%;   /*Height of the footer
+       background: #6cf; */
+       /* overflow-y:auto ; */
+    }
+}
